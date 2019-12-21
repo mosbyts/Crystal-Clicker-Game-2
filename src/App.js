@@ -9,25 +9,18 @@ class App extends React.Component {
 
   state={
     crystals: crystals,
-    value: 0,
     score: 0,
     losses: 0,
     clicked: []
   };
 
-//Logic for app start
   compoundDidMount(){
     this.resetGame();
   }
 
-  generateRandomValue = () => {
+  randomizeCrystals = () => {
     const value = Math.floor(Math.random() + 1);
-    this.setState({value: value});
-  }
-
-  removeCrystal = id => {
-    const crystals = this.state.crystals.filter(crystal => crystal.id !== id);
-    this.setState({crystals});
+    return crystals[value];
   }
 
   checkClick = () => {
@@ -44,6 +37,7 @@ class App extends React.Component {
   }
 
   resetGame = () => {
+    this.randomizeCrystals();
     this.setState({
       crystals: crystals,
       score: 0,
@@ -57,9 +51,8 @@ class App extends React.Component {
       this.resetGame();
     } else {
       this.updateScore();
-    }
+    };
   }
-//Logic for app end
 
   render(){
     return(
@@ -75,9 +68,7 @@ class App extends React.Component {
                 key={crystal.id}
                 name={crystal.name}
                 image={crystal.image}
-                value={this.generateRandomValue}
                 clicked={this.clicked}
-                removeCrystal={this.removeCrystal}
               />
             ))}
           </Container>
