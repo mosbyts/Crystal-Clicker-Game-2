@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Apatite",
+    "image": "https://www.energymuse.com/static/9e9ac8ba4dd257ff2bda64eb26712d9b/a2b2f/blueapatitetouchstone-palmstones-energymuse.png"
+  },
+  {
+      "id": 2,
+      "name": "Citrine",
+      "image": "https://ktscreativekorner.com/wp-content/uploads/2018/06/kts-creative-korner-citrine.png"
+  },
+  {
+      "id": 3,
+      "name": "Crystal",
+      "image": "https://atlas.wiki.fextralife.com/file/Atlas/crystal_resources_atlas_mmo_game_wiki_guide.png"
+  },
+  {
+      "id": 4,
+      "name": "Moonstone",
+      "image": "https://www.energymuse.com/static/c7f70d540cfbd0a14314eae65ef34cd8/a2b2f/rainbowmoonstonetouchstone-energymuse.png"
+  },
+  {
+      "id": 5,
+      "name": "Pyrite",
+      "image": "https://www.energymuse.com/static/7e9baffc85d6ff8b768f89cc7c98c2a2/1ed7e/pyritecrystal-energymuse.png"
+  }
+]
