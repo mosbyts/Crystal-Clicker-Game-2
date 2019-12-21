@@ -9,19 +9,20 @@ class App extends React.Component {
 
   state={
     crystals: crystals,
-    wins: 0,
+    value: 0,
+    score: 0,
     losses: 0,
     clicked: []
   };
 
 //Logic for app start
   compoundDidMount(){
-    this.generateRandomValue();
+    this.resetGame();
   }
 
   generateRandomValue = () => {
     const value = Math.floor(Math.random() + 1);
-    this.setState({crystals: value});
+    this.setState({value: value});
   }
 
   removeCrystal = id => {
@@ -31,36 +32,52 @@ class App extends React.Component {
 
   checkClick = () => {
     const clicked = [];
+    onclick(this.push(clicked));
   }
 
-  updateWins = () => {
-    const wins = 0;
-    this.setState({wins: this.state.wins + 1});
+  updateScore = () => {
+    this.setState({score: this.state.score + 1});
   }
 
   updateLosses = () => {
-    const losses = 0;
     this.setState({losses: this.state.losses + 1});
   }
 
   resetGame = () => {
+    this.setState({
+      crystals: crystals,
+      score: 0,
+      clicked: [],
+    });
+  }
 
+  game = () => {
+    if(this.state.clicked === crystals.id){
+      this.updateLosses();
+      this.resetGame();
+    } else {
+      this.updateScore();
+    }
   }
 //Logic for app end
 
   render(){
     return(
       <div>
-        <Header />
+        <Header 
+            score={this.state.score}
+            losses={this.state.losses}
+        />
           <Container>
             {this.state.crystals.map(crystal => (
               <Card 
-                removeCrystal={this.removeCrystal}
                 id={crystal.id}
                 key={crystal.id}
                 name={crystal.name}
-                value={this.generateRandomValue}
                 image={crystal.image}
+                value={this.generateRandomValue}
+                clicked={this.clicked}
+                removeCrystal={this.removeCrystal}
               />
             ))}
           </Container>

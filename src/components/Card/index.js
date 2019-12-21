@@ -7,7 +7,7 @@ function Card(props) {
         <div className="img-container">
           <img alt={props.name} src={props.image} onClick={() => props.removeCrystal(props.id)} className="remove"></img>
         </div>
-        <div className="content">
+        <div className="crystalName">
               <p><strong>{props.name}</strong></p>
         </div>
       </div>
