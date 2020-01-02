@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/crystal-clicker-game-2/static/css/main.8be63f6f.chunk.css",
+    "main.js": "/crystal-clicker-game-2/static/js/main.047e5287.chunk.js",
+    "main.js.map": "/crystal-clicker-game-2/static/js/main.047e5287.chunk.js.map",
+    "runtime-main.js": "/crystal-clicker-game-2/static/js/runtime-main.54063424.js",
+    "runtime-main.js.map": "/crystal-clicker-game-2/static/js/runtime-main.54063424.js.map",
+    "static/js/2.5b50efb9.chunk.js": "/crystal-clicker-game-2/static/js/2.5b50efb9.chunk.js",
+    "static/js/2.5b50efb9.chunk.js.map": "/crystal-clicker-game-2/static/js/2.5b50efb9.chunk.js.map",
+    "index.html": "/crystal-clicker-game-2/index.html",
+    "precache-manifest.42b4713c2a76116645cf23f0ab1e1123.js": "/crystal-clicker-game-2/precache-manifest.42b4713c2a76116645cf23f0ab1e1123.js",
+    "service-worker.js": "/crystal-clicker-game-2/service-worker.js",
+    "static/css/main.8be63f6f.chunk.css.map": "/crystal-clicker-game-2/static/css/main.8be63f6f.chunk.css.map",
+    "static/js/2.5b50efb9.chunk.js.LICENSE": "/crystal-clicker-game-2/static/js/2.5b50efb9.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54063424.js",
+    "static/js/2.5b50efb9.chunk.js",
+    "static/css/main.8be63f6f.chunk.css",
+    "static/js/main.047e5287.chunk.js"
+  ]
+}
