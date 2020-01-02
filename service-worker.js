@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/crystal-clicker-game-2/precache-manifest.42b4713c2a76116645cf23f0ab1e1123.js"
+  "/crystal-clicker-game-2/precache-manifest.90007283112d7023ad8720f986a3718b.js"
 );
 
 self.addEventListener('message', (event) => {
